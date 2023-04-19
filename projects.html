@@ -1,0 +1,13 @@
+---
+layout: default
+title: Projects
+---
+
+<ul>
+  {% for proj in site.projects %}
+    <li>
+      <h2><a href="{{ proj.url }}">{{ proj.name }}</a></h2>
+      <p>{{ proj.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
